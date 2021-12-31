@@ -101,4 +101,5 @@ public class KataTest {
         int price = kata.calculatePriceFor(copyNumber);
         assertEquals(copyNumber * 2000,price);
     }
+
 }

@@ -5,15 +5,14 @@ import java.util.Scanner;
 public class Atm {
     public static MyAccount damiAccount;
 
-    public static void main(String[] args) {
-        initialprompt();
+    public static void main(String[] args) {initialprompt();
     }
 
     public static void initialprompt() {
         String prompt = """
                 Welcome to Catalyst Bank!!!
                 Press 1 to create account
-                Press 2 to exit
+                Press any other number to exit
                  """;
         System.out.println(prompt);
         Scanner input = new Scanner(System.in);

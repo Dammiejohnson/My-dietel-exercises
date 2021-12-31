@@ -1,8 +1,20 @@
 package chapterSix;
 
 public class JunoAc {
+    private String name;
     private boolean isOn;
     private int temperature = 16;
+
+    public JunoAc(String name){
+        this.name = name;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public String getName(){
+        return "thermocool";
+    }
 
     public void turnOff() {
         isOn = false;

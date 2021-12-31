@@ -10,7 +10,7 @@ public class JunoAcTest {
 
     @BeforeEach
     public void startingPoint(){
-        myAc = new JunoAc();
+        myAc = new JunoAc("thermocool");
     }
 
     @Test
@@ -60,7 +60,7 @@ public class JunoAcTest {
         myAc.decreaseTemperature();
         // check that temperature is increased by 3 first and then decrease my 1
         int currentTemperature = myAc.getTemperature();
-        assertEquals(17, currentTemperature);
+        assertEquals(18, currentTemperature);
     }
 
     @Test

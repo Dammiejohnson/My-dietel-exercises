@@ -15,19 +15,20 @@ public class GuessNumber {
        double randomNumber = Math.random() * 1000;
         System.out.println(randomNumber);
 
-        for (int count = 1; count <= 1000; count++){
-            System.out.println("Guess  the number: ");
-            int guessNumber = input.nextInt();
-            if (guessNumber > randomNumber){
-                System.out.printf("%d is higher, try again\n", guessNumber);
-                if ( guessNumber < randomNumber)
-                System.out.printf("%d is lower, try again\n", guessNumber);
-                if (guessNumber== randomNumber)
-                { System.out.println("Congratulations, YOU ARE RIGHT!");
+                for (int count = 1; count <= 1000; count++) {
+                    System.out.println("Guess  the number: ");
+                    int guessNumber = input.nextInt();
+                    if (guessNumber > randomNumber) {
+                        System.out.printf("%d is higher, try again\n", guessNumber);
+                        if (guessNumber < randomNumber)
+                            System.out.printf("%d is lower, try again\n", guessNumber);
+                        if (guessNumber == randomNumber) {
+                            System.out.println("Congratulations, YOU ARE RIGHT!");
 
-                }
+                        }
+                    }
+
             }
-        }
 
     }
 }
