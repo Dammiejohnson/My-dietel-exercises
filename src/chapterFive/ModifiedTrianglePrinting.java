@@ -2,7 +2,7 @@ package chapterFive;
 
 public class ModifiedTrianglePrinting {
     public static void main(String[] args) {
-        int length = 5;
+        int length = 10;
 
         for (int row = 1; row <= length; row++) {
             for (int column = 1; column <= row; column++) {

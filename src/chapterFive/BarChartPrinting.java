@@ -15,6 +15,9 @@ public class BarChartPrinting {
             for (int i = 1; i <= num1; i++) {
                 if (num1 > 0 && num1 <= 30 )
                     System.out.print("* ");
+                else {
+                    System.out.print("  ");
+                }
                 }
                 System.out.println();
                 for (int i = 1; i <= num2; i++) {
