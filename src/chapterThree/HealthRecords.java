@@ -6,23 +6,22 @@ public class HealthRecords {
     private String firstName;
     private String lastName;
     private String gender;
-    private int height;
+    private double height;
     private LocalDate dayOfBirth;
-    private double weightInPounds;
+    private double weightInPound;
 
-    public HealthRecords(String firstName, String lastName, String gender, int day, int month, int year, int height, double weightInPounds) {
+    public HealthRecords(String firstName, String lastName, String gender, int day, int month, int year, double height, double weightInPound) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
         //this.dayOfBirth = dayOfBirth;
         dayOfBirth = LocalDate.of(year,month,day);
-        this.weightInPounds = weightInPounds;
+        this.height = height;
+        this.weightInPound = weightInPound;
 
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
+    public String getFirstName() {return firstName;}
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
@@ -52,24 +51,22 @@ public class HealthRecords {
         this.dayOfBirth = LocalDate.of(year, month, day);
     }
 
-    public void setDayOfBirth(LocalDate dayOfBirth){
-        this.dayOfBirth = dayOfBirth;
-    }
+    //public void setDayOfBirth(LocalDate dayOfBirth){this.dayOfBirth = dayOfBirth;}
 
-    public int getHeight() {
+    public double getHeight() {
         return height;
     }
 
-    public void setHeight(int height) {
+    public void setHeight(double height) {
         this.height = height;
     }
 
-    public double getWeightInPounds() {
-        return weightInPounds * 2.2046;
+    public double getWeightInPound() {
+        return weightInPound * 2.2046;
     }
 
-    public void setWeightInPounds(double weightInPounds) {
-        this.weightInPounds = weightInPounds;
+    public void setWeightInPound(double weightInPound) {
+        this.weightInPound = weightInPound;
     }
 
 
@@ -77,8 +74,7 @@ public class HealthRecords {
     public int calculateMaximumHeartRate() {
         int currentYear = LocalDate.now().getYear();
         int age = currentYear - dayOfBirth.getYear();
-        int maximumHeartRate = 220 - age;
-        return maximumHeartRate;
+        return 220 - age;
     }
 
     public String getTargetHeartRate() {
@@ -89,12 +85,11 @@ public class HealthRecords {
     }
 
     public double getBodyMassIndex() {
-        return (weightInPounds * 703) / (height * height);
+        return (weightInPound * 703) / (height * height);
     }
 
     public int  getAgeInYears(){
         int currentYear = LocalDate.now().getYear();
-        int age = currentYear - dayOfBirth.getYear();
-    return age;
+        return currentYear - dayOfBirth.getYear();
     }
 }

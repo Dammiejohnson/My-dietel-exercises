@@ -1,11 +1,9 @@
 package ChapterTwo;
 
 import java.util.Scanner;
-	public class LargerEqual{
+	public class LargerAndEqualNumbers {
 	public static void main (String [] args) {
 	Scanner digit = new Scanner (System.in);
-	
-	
 	System.out.println("Enter first Integer");
 	int firstInteger = digit.nextInt();
 	
@@ -19,15 +17,11 @@ import java.util.Scanner;
 	if (secondInteger > firstInteger) {
 	System.out.printf("%d is larger\n", secondInteger);
 	}
-	
-	
+
 	if (secondInteger == firstInteger) {
-	
 	System.out.printf("%d and %d are equal\n", firstInteger, secondInteger);
 	}
-	
-	
-	
+
 	}
 	
 	}

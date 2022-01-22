@@ -2,7 +2,7 @@ package chapterFour;
 
 import java.util.Scanner;
 
-public class TwoLargestNunmber {
+public class TwoLargestNumber {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int largest = Integer.MIN_VALUE;

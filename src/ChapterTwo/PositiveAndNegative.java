@@ -34,8 +34,8 @@ import java.util.Scanner;
 			else if (a == 0){
 			zeroCount++;
 			}			
-	
-	if (b > 0){
+	boolean bIsPositive = b > 0;
+	if (bIsPositive){
 	positiveCount++;
 	}
 		if (b < 0){

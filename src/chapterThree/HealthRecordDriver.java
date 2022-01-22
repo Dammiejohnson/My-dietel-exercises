@@ -20,7 +20,7 @@ public class HealthRecordDriver {
         System.out.println("Enter year of birth:");
         int year = scanner.nextInt();
         System.out.println("Enter height in inches:");
-        int height = scanner.nextInt();
+        double height = scanner.nextDouble();
         System.out.println("Enter weight in pounds:");
         double weight = scanner.nextInt();
 
@@ -29,16 +29,15 @@ public class HealthRecordDriver {
         healthRecords.setDayOfBirth(year, month, day);
         healthRecords.setGender(gender);
         healthRecords.setHeight(height);
-        healthRecords.setWeightInPounds(weight);
+        healthRecords.setWeightInPound(weight);
 
         String dob = healthRecords.getDayOfBirth().toString();
 
-        System.out.printf("First name is %s%n", healthRecords.getFirstName());
-        System.out.printf("Last name is %s%n", healthRecords.getLastName());
-        System.out.printf("%s%n", healthRecords.getGender());
-        System.out.println("Day of birth is" + dob + "\n");
-        System.out.printf("Patient's height is %d%n", healthRecords.getHeight()) ;
-        System.out.printf("Patient's weight in pounds is %.4f%n", healthRecords.getWeightInPounds());
+        System.out.println("Patient's name "+ healthRecords.getFirstName()+ " " + healthRecords.getLastName());
+        System.out.printf("Patient's gender is %s%n",healthRecords.getGender());
+        System.out.println("Day of birth is " + dob);
+        System.out.printf("Patient's height is %.2f%s%n", healthRecords.getHeight(), "inches") ;
+        System.out.printf("Patient's weight in pound is %.2f%s%n", healthRecords.getWeightInPound(), "pound");
         System.out.printf("Present age is %d%n", healthRecords.getAgeInYears());
         System.out.printf("Maximum heart rate is %d%n", healthRecords.calculateMaximumHeartRate());
         System.out.printf("Target heart rate is %s%n", healthRecords.getTargetHeartRate());
