@@ -1,4 +1,4 @@
-package chapterEight;
+package chapterEight.example;
 
 public class Time {
         private int hour;

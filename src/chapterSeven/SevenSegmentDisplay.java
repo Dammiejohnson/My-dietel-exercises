@@ -46,7 +46,7 @@ public class SevenSegmentDisplay {
                 }
                 if (seventhDigit == 1) {
                     displayG();
-                } else System.out.println("  ");
+                } //else System.out.println("  ");
             } else System.exit(0);
         }
         else {

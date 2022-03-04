@@ -13,7 +13,7 @@ import java.util.Scanner;
 	System.out.print((number % 10000) / 1000 + " " );
 	System.out.print((number % 1000) / 100 + " ");
 	System.out.print((number % 100) / 10 + " " );
-	System.out.println((number % 10) / 1 + " ");
+	System.out.println((number % 10) + " ");
 	
 	
 	}
