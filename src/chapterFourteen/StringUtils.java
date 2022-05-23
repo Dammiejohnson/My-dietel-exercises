@@ -62,6 +62,33 @@ public class StringUtils {
         return index;
     }
 
+    public int countOfIndex(boolean value, char character) {
+        int count = 0;
+        if (value) {
+            string = string.toLowerCase();
+            character = Character.toLowerCase(character);
+            for (int i = 0; i < string.length(); i++) {
+                if (string.charAt(i) == character) {
+                    count+=1;
+                }
+            }
+        }
+        else {
+            return count;
+        }
+        return count;
+    }
+
+    public int countOfIndex(char character) {
+        int count = 0;
+            for (int i = 0; i < string.length(); i++) {
+                if (string.charAt(i) == character) {
+                    count+=1;
+                }
+            }
+        return count;
+    }
+
 
 
 }

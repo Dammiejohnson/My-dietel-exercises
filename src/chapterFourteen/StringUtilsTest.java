@@ -9,5 +9,7 @@ public class StringUtilsTest {
         System.out.println(stringUtils.indexOf('t'));
         System.out.println(stringUtils.indexOf(true, 'T'));
         System.out.println(stringUtils.indexOf(false, 'T'));
+        System.out.println(stringUtils.countOfIndex(true, 'T'));
+        System.out.println(stringUtils.countOfIndex('T'));
     }
 }

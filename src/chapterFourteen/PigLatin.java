@@ -5,7 +5,7 @@ public class PigLatin {
         StringBuilder result = new StringBuilder(word);
         Character character = result.charAt(0);
         result.insert(result.length(),character);
-        result.append("ay");
+        result.append("ay");  
         return result.substring(1);
 
         }
